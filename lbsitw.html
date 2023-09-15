@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta content="width=device-width,initial-scale=1.0">
+<meta name="viewport">
+<link rel="stylesheet" href="lbs.css">
+<title>LBSITW CSE</title>
+</head>
+<script>
+const array=[
+{
+        heading:"PLACEMENT RECORDS",
+        image:"Tip-for-campus-placements-2-05-2018.jpg",
+        des:"http://sdc.lbt.ac.in/webdesk2023/academic/placement_data_2021-2022.pdf",
+        about:"LBS Institute of Technology for Women sets a new milstone in campus placement in the past few years.click to see the placement record of 22-23",
+    },
+     {
+        heading:"FACILITIES",
+        image:"images.png",
+        des:"http://lbt.ac.in/cse_facilities_tvm_kerala/",
+        about:"Our Institution has a well-equiped computer labs and library",
+    },
+    {
+        heading:"SYLLABUS",
+        image:"images (2).png",
+        des:"https://ktu.edu.in/data/15.COMPUTER%20SCIENCE%20AND%20ENGINEERING.pdf?=YnSFhPJdJPHRKPOGemlmidfYjVyaBbjUynYbb6yz0IEtVeRtLQ4HaN4AWao6Iyb3MsRB03jfm1HV068qav4e5g%3D%3D",
+    about:"Click to download the whole syllabus(8 semesters)",
+    },
+    {
+        heading:"FACULTIES",
+        image:"images (3).jpg",
+        des:"http://lbt.ac.in/lbt_cse_faculty/",
+        about:"Meet our experienced faculties.",
+    }
+];
+
+let count=0;
+function nxt(){
+    count++;
+    const hd=document.getElementById("head");
+    const pic=document.getElementById("img");
+const at=document.getElementById("about");
+const dp=document.getElementById("descrip");
+    const rev=array[count];
+    hd.textContent=rev.heading;
+    pic.src=rev.image;
+    at.href=rev.des;
+    dp.textContent=rev.about;
+}
+function prv(){
+    count--;
+    const hd=document.getElementById("head");
+    const pic=document.getElementById("img");
+const at=document.getElementById("about");
+const dp=document.getElementById("descrip");
+    const rev=array[count];
+    hd.textContent=rev.heading;
+    pic.src=rev.image;
+   at.href=rev.des;
+   dp.textContent=rev.about;
+}
+
+
+
+</script>
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://lbt.ac.in/">Home</li></a>
+            <li><a href="mailto:principal@lbt.ac.in">Contact</li></a>
+            <li><a href="https://lbt.ac.in/lbsitw_student_centre/">Login</li></a>
+        </ul>
+    </nav>
+<div class="main">
+    
+    <h1 >LBS INSTITUTE OF TECHNOLOGY FOR WOMEN</h1>
+    <h3 align="center">COMPUTER SCIENCE  &  ENGINEERING DEPARTMENT<h3>
+    
+    </div>
+
+
+<p>Department of Computer Science and Engineering started in the year 2001 offers two batches of BTech in Computer Science and Engineering. Computer Science and Engineering is highly technical and demanding discipline that offers regarding and challenging possibilities for the students.It is a broad and flexible degree program with the curriculum specifically designed to reflect the depth and breadth of computer science which tend to develop strong theoretical and analytical skills instruction processing systematic well planned and uninterrupted in all respect.Our students have a study and consistent performance in University exams and secret several rank in the University.</p>
+<div><h1>MISSION</h1>
+<p><b>To impart quality Technical education by providing a conducive learning and research ambience for moulding ethically responsible engineers,academicians and reseachers catering to the needs of industry and society.</b></p>
+   <div><h1>VISION</h1><p><b>To be a renowed academic and research centre in Computer Science and allied domains.</b></p>
+</div>
+<br><br>
+   <div class="slide">
+   <h2 align="center" id="head">PLACEMENT RECORDS</h2>
+    <img src="Tip-for-campus-placements-2-05-2018.jpg" id='img'   ><br>
+    <a  id="about" href="http://sdc.lbt.ac.in/webdesk2023/academic/placement_data_2021-2022.pdf" > CLICK HERE</a>
+    <p id="descrip">LBS Institute of Technology for Women sets a new milstone in campus placement in the past few years.click to see the placement record of 22-23</b></p>
+    <section>
+    <button onclick="prv()"    class="first"
+    >&laquo;</button>
+    <button onclick="nxt()"  class="second" > &raquo;</button></section>
+    <br><br><br>
+</div>
+</body>
+</html>
